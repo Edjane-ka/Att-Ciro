@@ -1,10 +1,33 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<a href=https://www.php.net >php</a> 
+<a href=https://laravel.com/docs/10.x >laravel </a> 
+         -- Passo a Passo --
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Proposta: 
+<br>
+A proposta inicial do projeto é desenvolvermos 3 serviços que se 
+comunicam entre si. Adicionaremos complexidade de acordo com o an
+damento da turma.
+<br>
+1- Ter um ambiente para executar a tarefa (meu caso: vscode)
+<br>
+2- Criar um prjeto em laravel. Comando: composer create-project laravel/laravel Escola-Api
+<br>
+3- No arquivo web criamos as rotas:  O /hello exibe a mensagem 'Hello Word' e a / aponta os padsde url 
+          
+          -- ROTAS --
+<br>
+Route::get('/', function () {
+    return view('welcome');
+});
+<br>
+Route::get('/', function () {
+    return '{"hello_url": "/hello"}';
+});
+<br>
+Route::get('/hello', function () { 
+    return 'Hello Word'; 
+}); 
+
+
 
 
